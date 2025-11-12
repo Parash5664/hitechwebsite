@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi-Tech Pathology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header" class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Hi-Tech Pathology Home">
+        <img src="logo.jpeg" alt="Hi-Tech Pathology logo">
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        <span class="sr-only">Toggle navigation</span> &#9776;
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a class="active" href="index.html">HOME</a></li>
+          <li><a href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Sliding Images -->
+  <main>
+    <section class="hero" aria-label="Hero - Hi-Tech Pathology">
+      <div class="slider" aria-live="polite">
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 1">
+          <img src="a2.jpeg" alt="Lab working" />
+          <div class="caption">
+            <h1>Welcome to Hi-Tech Pathology</h1>
+            <p>Quality testing, trusted results.</p>
+            <a href="book.html" class="btn primary">Book Now</a>
+          </div>
+        </div>
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 2">
+          <img src="a4.jpeg" alt="Advanced instruments" />
+          <div class="caption">
+            <h1>Advanced Lab Services</h1>
+            <p>Accuracy you can count on.</p>
+            <a href="services.html" class="btn">Our Services</a>
+          </div>
+        </div>
+        <div class="slides fade" role="group" aria-roledescription="slide" aria-label="Slide 3">
+          <img src="a9.jpg" alt="Booking online" />
+          <div class="caption">
+            <h1>Book Your Test Online</h1>
+            <p>Fast, reliable, and hassle-free.</p>
+            <a href="book.html" class="btn primary">Start Booking</a>
+          </div>
+        </div>
+
+        <!-- Prev/Next -->
+        <button class="prev" aria-label="Previous slide" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" aria-label="Next slide" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots" role="tablist" aria-label="Slide buttons">
+        <button class="dot" onclick="currentSlide(1)" aria-label="Slide 1"></button>
+        <button class="dot" onclick="currentSlide(2)" aria-label="Slide 2"></button>
+        <button class="dot" onclick="currentSlide(3)" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <!-- About Hi-Tech Lab Section -->
+    <section id="about-lab" class="about-lab">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="a6.jpeg" alt="Hi-Tech Lab facility">
+        </div>
+        <div class="about-text">
+          <h2>About Hi-Tech Pathology Lab</h2>
+          <p>
+            Hi-Tech Pathology Lab is dedicated to providing accurate and reliable diagnostic services. Equipped with modern instruments and skilled professionals, we ensure timely results and exceptional patient care. Our commitment is to quality, precision, and trust in every test we perform.
+          </p>
+          <div class="about-cta">
+            <a href="services.html" class="btn">Explore Services</a>
+            <a href="contact.html" class="btn outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <article class="service-card">
+          <img src="a1.jpeg" alt="Blood Tests">
+          <h3>Blood Tests</h3>
+          <p>Comprehensive testing with accurate results.</p>
+          <a href="services.html#blood" class="btn sm">Learn more</a>
+        </article>
+        <article class="service-card">
+          <img src="a5.jpg" alt="Urine Analysis">
+          <h3>Urine Analysis</h3>
+          <p>Reliable and quick urine testing services.</p>
+          <a href="services.html#urine" class="btn sm">Learn more</a>
+        </article>
+        <article class="service-card">
+          <img src="a8.jpg" alt="COVID-19 Testing">
+          <h3>COVID-19 Testing</h3>
+          <p>Safe and certified testing for COVID-19.</p>
+          <a href="services.html#covid" class="btn sm">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="location" class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d114027.84575902396!2d85.84127032152662!3d26.73256069486557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39ec4003d9a9685d%3A0xb20a0a292263104b!2sRang%20Bumi%20Marga%2C%20Janakpur%2045600!3m2!1d26.732584499999998!2d85.9236718!5e0!3m2!1sen!2snp!4v1762801523435!5m2!1sen!2snp"
+       width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Up Button -->
+  <button id="scrollUpBtn" class="scroll-up" title="Go to top" aria-label="Scroll to top">&#8679;</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 Aishwarya Sah. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Navigation Toggle
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      mainNav.classList.toggle('nav-open');
+    });
+
+    // Scroll Up Button
+    const scrollBtn = document.getElementById('scrollUpBtn');
+    window.onscroll = () => {
+      scrollBtn.style.display = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ? 'block' : 'none';
+    };
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+
+    // Slider
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slides");
+      const dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Optional: Auto Slide every 5 seconds
+    setInterval(() => { plusSlides(1); }, 5000);
+  </script>
+</body>
+</html>

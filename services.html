@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Services - Hi-Tech Pathology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header (same as index) -->
+  <!-- You can copy header-inner from index.html to keep exact nav -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><img src="logo.jpeg" alt="logo"></a>
+      <button id="navToggle" class="nav-toggle">&#9776;</button>
+      <nav id="mainNav" class="main-nav">
+        <ul class="navmenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="services.html">OUR SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="book.html">BOOK A TEST</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="team.html">OUR TEAM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="margin-top:88px;padding:28px;">
+    <section class="services">
+      <h2>Services</h2>
+      <p style="color:var(--muted); max-width:900px; margin:0 auto 20px; text-align:center;">
+        We provide a wide range of diagnostic tests. Click a card to learn more or call our lab for assistance.
+      </p>
+
+      <div class="service-cards" style="max-width:1100px;margin:18px auto;">
+        <article class="service-card" id="blood">
+          <img src="a1.jpeg" alt="Blood tests">
+          <h3>Blood Tests</h3>
+          <p>Complete blood counts, lipid profile, liver and kidney panels, and more.</p>
+        </article>
+
+        <article class="service-card" id="urine">
+          <img src="a5.jpg" alt="Urine analysis">
+          <h3>Urine Analysis</h3>
+          <p>Routine analysis, microscopy, and cultures.</p>
+        </article>
+
+        <article class="service-card" id="covid">
+          <img src="a8.jpg" alt="COVID testing">
+          <h3>COVID-19 Testing</h3>
+          <p>RT-PCR and rapid antigen testing with certified reporting.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2025 Aishwarya Sah. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

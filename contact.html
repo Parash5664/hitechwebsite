@@ -1,3 +1,5 @@
+--- START OF FILE contact.html ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,57 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Contact - Hi-Tech Pathology</title>
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- START: WhatsApp Floating Button Styles (Retained) -->
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px; 
+      right: 30px; 
+      background-color: #25d366; /* WhatsApp Green */
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 36px;
+      line-height: 60px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+    }
+    
+    .whatsapp-float span {
+        display: inline-block;
+        transform: translateY(1px);
+    }
+
+    /* START: WhatsApp Form Button Style */
+    .whatsapp-btn {
+        background-color: #25d366 !important; /* WhatsApp Green */
+        color: white !important;
+        text-align: center;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        display: block;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .whatsapp-btn:hover {
+        background-color: #128C7E !important;
+    }
+    /* END: WhatsApp Form Button Style */
+
+  </style>
+  <!-- END: WhatsApp Floating Button Styles -->
 </head>
 <body>
   <!-- header -->
@@ -29,13 +82,19 @@
   <main style="margin-top:88px;padding:28px;">
     <section style="max-width:900px;margin:0 auto;">
       <h2>Contact Us</h2>
-      <p class="muted">Call: +977-1-xxxxxxx | Email: info@hitechpath.com</p>
-      <form style="margin-top:12px;display:grid;gap:10px;">
+      <p class="muted">Call: +977-9822382156 | Email: hplnepal18@gmail.com</p>
+      
+      <!-- Removed FORM tags since we are now redirecting to a WhatsApp link on button click -->
+      <div style="margin-top:12px;display:grid;gap:10px;">
         <input type="text" placeholder="Name" style="padding:10px;border-radius:8px;border:1px solid #ddd;">
         <input type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid #ddd;">
         <textarea rows="5" placeholder="Message" style="padding:10px;border-radius:8px;border:1px solid #ddd;"></textarea>
-        <button class="btn primary" type="submit">Send Message</button>
-      </form>
+        
+        <!-- Replaced button with a WhatsApp-linked anchor tag -->
+        <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20have%20a%20query%20regarding%20Hi-Tech%20Pathology." class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+            Send Message to WhatsApp
+        </a>
+      </div>
     </section>
   </main>
 
@@ -45,7 +104,11 @@
     </div>
   </footer>
 
+  <!-- WhatsApp Floating Button Integration -->
+  <a href="https://wa.me/9779822382156" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+    <span>&#128222;</span> 
+  </a>
+
   <script src="script.js"></script>
 </body>
 </html>
-

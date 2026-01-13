@@ -503,12 +503,11 @@ body{
 
 @media screen and (max-width: 480px) {
   .logo-and-address {
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   
   .address-block {
-    margin-left: 0;
+    font-size: 11px;
   }
   
   .header-inner {

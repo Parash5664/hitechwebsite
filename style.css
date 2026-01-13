@@ -48,6 +48,30 @@ body{
   flex-wrap: wrap;
 }
 
+/* Logo and Address Block */
+.logo-and-address {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.address-block {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.address {
+  font-weight: 500;
+}
+
 .logo img{ 
   width:92px; 
   height:auto; 

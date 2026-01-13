@@ -1,0 +1,32 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://www.hitechpathologylab.com.np/sitemap.xml
+
+# Directories
+Disallow: /images/
+
+# Files
+Disallow: /README.md
+
+# Host
+Host: www.hitechpathologylab.com.np
+
+# Crawlers Setup
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /

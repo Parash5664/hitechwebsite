@@ -80,12 +80,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === 'ArrowLeft') plusSlides(-1);
     if (e.key === 'ArrowRight') plusSlides(1);
   });
-});
 
-// -------------------- GEMINI CHATBOT --------------------
-const API_KEY = "AIzaSyB5tCUgEU-VrJeXfIgqsz9qHVkat8C5lmw";
-
-document.addEventListener("DOMContentLoaded", () => {
+  // -------------------- GEMINI CHATBOT --------------------
+  const API_KEY = "AIzaSyB5tCUgEU-VrJeXfIgqsz9qHVkat8C5lmw";
+  
   const chatBtn = document.getElementById("chatbot-btn");
   const chatBox = document.getElementById("chatbot-box");
   const sendBtn = document.getElementById("chatbot-send");

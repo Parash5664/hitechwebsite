@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const expanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!expanded));
       mainNav.classList.toggle('open');
+      
+      // Update toggle icon based on state
+      this.innerHTML = expanded ? '&#9776;' : '&#10005;';
     });
 
     // Close nav when clicking a link (mobile)
@@ -55,7 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
     navLinks.forEach(link => link.addEventListener('click', () => {
       mainNav.classList.remove('open');
       navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.innerHTML = '&#9776;'; // Reset to hamburger icon
     }));
+    
+    // Close nav when clicking outside (mobile)
+    document.addEventListener('click', function(event) {
+      if (!mainNav.contains(event.target) && !navToggle.contains(event.target)) {
+        mainNav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.innerHTML = '&#9776;'; // Reset to hamburger icon
+      }
+    });
   }
 
   // Scroll Up button

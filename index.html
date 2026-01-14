@@ -184,55 +184,7 @@
     </div>
   </footer>
 
-  <!-- Script -->
-  <script>
-    // Navigation Toggle
-    const navToggle = document.getElementById('navToggle');
-    const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
-      navToggle.setAttribute('aria-expanded', !expanded);
-      mainNav.classList.toggle('nav-open');
-    });
-
-    // Scroll Up Button
-    const scrollBtn = document.getElementById('scrollUpBtn');
-    window.onscroll = () => {
-      scrollBtn.style.display = document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ? 'block' : 'none';
-    };
-    scrollBtn.addEventListener('click', () => {
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-
-    // Slider
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      const slides = document.getElementsByClassName("slides");
-      const dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-
-    // Optional: Auto Slide every 5 seconds
-    setInterval(() => { plusSlides(1); }, 5000);
-  </script>
+  <!-- External Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>

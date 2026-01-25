@@ -516,3 +516,17 @@ body{
     gap: 8px;
   }
 }
+
+/* Stick Footer Setup */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+main {
+  flex: 1; /* Take all remaining vertical space */
+}
+
+
+

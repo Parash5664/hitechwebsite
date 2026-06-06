@@ -856,7 +856,7 @@ img{
 
 .about-container{
     display:grid !important;
-    grid-template-columns:320px 1fr !important;
+    grid-template-columns:420px 1fr !important;  /* wider column */
     align-items:center !important;
     gap:60px !important;
     max-width:1200px !important;
@@ -869,11 +869,13 @@ img{
 }
 
 .about-image img{
-    width:280px !important;
-    height:380px !important;
+    width:100% !important;       /* fill the column */
+    height:420px !important;     /* taller */
     object-fit:cover !important;
+    object-position: center top !important;  /* show face/top of subject */
     border-radius:24px;
 }
+
 
 .about-text{
     max-width:none !important;
@@ -884,14 +886,13 @@ img{
 }
 
 @media (max-width:768px){
-
     .about-container{
         grid-template-columns:1fr !important;
         text-align:center;
     }
-
     .about-image img{
-        width:260px !important;
+        width:100% !important;
         height:320px !important;
     }
 }
+

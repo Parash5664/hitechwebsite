@@ -174,3 +174,41 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Enter") sendMessage();
   });
 });
+
+/* ==================================
+   IMAGE LIGHTBOX
+================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close-modal");
+
+    document.querySelectorAll("img").forEach(img => {
+
+        img.addEventListener("click", () => {
+
+            if (
+                img.closest(".logo") ||
+                img.classList.contains("modal-content")
+            ) {
+                return;
+            }
+
+            modal.style.display = "flex";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        });
+
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+});

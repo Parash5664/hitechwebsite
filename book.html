@@ -20,7 +20,7 @@
   <title>Book a Test Online - Hi-Tech Pathology Lab, Janakpurdham</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- WhatsApp Styles Added -->
+  <!-- WhatsApp Styles -->
   <style>
     .whatsapp-float {
       position: fixed;
@@ -53,7 +53,7 @@
       background-color: #25d366 !important;
       color: white !important;
       text-align: center;
-      padding: 10px;
+      padding: 12px;
       border-radius: 8px;
       text-decoration: none;
       display: block;
@@ -76,7 +76,9 @@
       
       <!-- Logo and Address Block -->
       <div class="logo-and-address">
-        <a href="index.html" class="logo"><img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo"></a>
+        <a href="index.html" class="logo">
+          <img src="logo.jpeg" alt="Hi-Tech Pathology Lab logo">
+        </a>
         <div class="address-block">
           <div class="address">Janakpurdham</div>
           <div class="address">Hospital Road</div>
@@ -101,18 +103,34 @@
 
   <main style="margin-top:88px;padding:28px;">
     <section style="max-width:900px;margin:18px auto; background:#fff; padding:20px; border-radius:12px; box-shadow:var(--shadow);">
+      
       <h2>Book a Test</h2>
-      <p class="muted">Fill the form below and our staff will contact you to confirm the appointment.</p>
+      <p class="muted">Fill the details below and book directly through WhatsApp.</p>
 
-      <form id="bookingForm" style="margin-top:12px; display:grid; gap:10px;">
-        <input type="text" name="name" required placeholder="Full name" style="padding:10px; border-radius:8px; border:1px solid #ddd;">
-        <input type="tel" name="phone" required placeholder="Phone number" style="padding:10px; border-radius:8px; border:1px solid #ddd;">
-        <input type="email" name="email" placeholder="Email (optional)" style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+      <form style="margin-top:12px; display:grid; gap:10px;">
 
-        <select name="test" style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+        <input type="text" 
+               name="name" 
+               required 
+               placeholder="Full name" 
+               style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+
+        <input type="tel" 
+               name="phone" 
+               required 
+               placeholder="Phone number" 
+               style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+
+        <input type="email" 
+               name="email" 
+               placeholder="Email (optional)" 
+               style="padding:10px; border-radius:8px; border:1px solid #ddd;">
+
+        <select name="test" 
+                style="padding:10px; border-radius:8px; border:1px solid #ddd;">
           <option value="">Select test</option>
-          <option> Basic Health Checkup Package</option>
-          <option> Advanced Health Checkup Package</option>
+          <option>Basic Health Checkup Package</option>
+          <option>Advanced Health Checkup Package</option>
           <option>Blood Test</option>
           <option>Urine Analysis</option>
           <option>Thyroid Test</option>
@@ -123,22 +141,20 @@
           <option>COVID-19 Test</option>
         </select>
 
-        <textarea name="notes" rows="4" placeholder="Additional notes" style="padding:10px; border-radius:8px; border:1px solid #ddd;"></textarea>
+        <textarea name="notes" 
+                  rows="4" 
+                  placeholder="Additional notes" 
+                  style="padding:10px; border-radius:8px; border:1px solid #ddd;"></textarea>
 
-        <!-- Existing Button Kept -->
-        <button class="btn primary" type="submit">Request Booking</button>
-
-        <!-- WhatsApp Booking Button Added -->
-        <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology." 
-           class="whatsapp-btn" 
-           target="_blank" 
+        <!-- Only WhatsApp Button -->
+        <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology."
+           class="whatsapp-btn"
+           target="_blank"
            rel="noopener noreferrer">
           Book via WhatsApp
         </a>
 
       </form>
-
-      <p id="bookingMsg" style="margin-top:10px;color:var(--muted);"></p>
     </section>
   </main>
 
@@ -148,26 +164,15 @@
     </div>
   </footer>
 
-  <!-- WhatsApp Floating Button Added -->
-  <a href="https://wa.me/9779822382156" 
-     class="whatsapp-float" 
-     target="_blank" 
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/9779822382156"
+     class="whatsapp-float"
+     target="_blank"
      aria-label="Chat with us on WhatsApp">
     <span>&#128222;</span>
   </a>
 
   <script src="script.js"></script>
 
-  <script>
-    // Existing booking form logic unchanged
-    document.getElementById('bookingForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('bookingMsg').textContent =
-        'Thank you! Your booking request has been received. Our staff will contact you soon.';
-      this.reset();
-    });
-  </script>
-
 </body>
 </html>
-

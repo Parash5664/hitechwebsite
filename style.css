@@ -403,6 +403,10 @@ body{
   display: block;
 }
 
+.team-photo.om-photo {
+  object-position: center top;
+}
+
 .team-info {
   padding: 20px;
 }

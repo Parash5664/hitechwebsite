@@ -404,7 +404,7 @@ body{
 }
 
 .team-photo.om-photo {
-  object-position: center top;
+  object-position: center 0% !important;
 }
 
 .team-info {

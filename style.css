@@ -155,7 +155,7 @@ body{
   text-shadow: 0 8px 30px rgba(10,10,30,0.4);
   z-index:1;
 }
-.caption h1{ font-size:clamp(22px,3.3vw,40px); margin-bottom:8px; }
+.caption h1,.caption h2{ font-size:clamp(22px,3.3vw,40px); margin-bottom:8px; }
 .caption p{ font-size:16px; margin-bottom:12px; opacity:0.95; }
 
 .btn{
@@ -210,6 +210,50 @@ body{
 .service-card h3{ margin-bottom:6px; color:var(--accent-2);}
 .service-card p{ color:var(--muted); margin-bottom:10px; }
 .btn.sm{ padding:8px 12px; font-size:13px; }
+
+.local-seo{
+  padding:44px 24px;
+  margin:24px 18px;
+  background:#f2f8ff;
+  border-radius:18px;
+}
+.local-seo-inner{ max-width:1100px; margin:auto; text-align:center; }
+.local-seo-inner h1{ font-size:clamp(24px,3vw,34px); margin-bottom:12px; }
+.local-seo-inner > p{ max-width:850px; margin:0 auto 22px; color:var(--muted); line-height:1.7; }
+.local-test-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px 28px;
+  max-width:900px;
+  margin:0 auto 24px;
+  padding-left:22px;
+  text-align:left;
+}
+.local-test-list a{ color:var(--accent-2); }
+.popular-tests{
+  max-width:1100px;
+  margin:48px auto 0;
+  padding:34px 24px;
+  background:#f4f8fc;
+  border-radius:18px;
+}
+.popular-tests h2,.popular-tests-intro{ text-align:center; }
+.popular-tests-intro{ color:var(--muted); }
+.test-links{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin:24px 0;
+}
+.test-links article{
+  padding:18px;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:var(--shadow);
+}
+.test-links article h3{ color:var(--accent-2); margin-bottom:6px; }
+.test-links article p{ color:var(--muted); margin:0; }
+.popular-tests > .btn{ display:table; margin:0 auto; }
 
 /* Map */
 .map-section{ padding:28px; margin:18px; background:#fff; border-radius:12px; box-shadow:var(--shadow); }
@@ -271,7 +315,8 @@ body{
 
 @media (max-width: 640px){
   .service-cards{ grid-template-columns: 1fr; }
-  .caption h1{ font-size:20px; }
+  .local-test-list,.test-links{ grid-template-columns:1fr; }
+  .caption h1,.caption h2{ font-size:20px; }
   .slider{ height:360px; margin:12px; border-radius:14px; }
   .header-inner{ gap:8px; padding: 12px 50px 12px 16px; }
   .logo img{ width:78px; }

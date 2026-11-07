@@ -1,137 +1,49 @@
-# SEO Optimization Guide for Hi-Tech Pathology Lab
+# SEO Plan for Hi-Tech Pathology Lab
 
-## Completed SEO Improvements
+## Updates made to the website
 
-### 1. Technical SEO
-- Added comprehensive meta tags to all pages
-- Implemented Open Graph and Twitter Card meta tags
-- Created structured data (Schema.org) markup
-- Added robots.txt and sitemap.xml files
-- Improved page titles with location-based keywords
-- Enhanced image alt text with descriptive, keyword-rich content
+- Added distinct page titles, descriptions, canonical URLs, and social-sharing metadata.
+- Added the square lab logo as the site favicon and specified “Hi-Tech Pathology Lab” as the preferred Google site name.
+- Added LocalBusiness and DiagnosticLab structured data with the lab's published phone number, email, and Hospital Road address.
+- Added visible service information for Janakpur searches: HbA1c, blood sugar, LFT/SGPT, KFT/creatinine, Vitamin D, Vitamin B12, lipid profile, Beta hCG, PSA, CA-125, health checkups, home sample collection, and online report enquiries.
+- Added links between service information, packages, and the booking page.
+- Updated the booking form to include these tests and packages and send the selected request details to WhatsApp.
+- Corrected `robots.txt` and the HTTPS sitemap, removed the duplicate home URL, and listed only canonical pages.
 
-### 2. Content SEO
-- Optimized page content with location-based keywords (Janakpurdham, Dhanusha, Nepal)
-- Added detailed service descriptions
-- Improved headings structure (H1, H2, H3) for better content hierarchy
-- Included keyword-rich anchor text for internal linking
-- Added location-specific content throughout the site
+Google does not use the `meta keywords` tag for Search. The target phrases are therefore used in page titles, headings, service descriptions, and useful internal links rather than repeated in a hidden keyword list. Google may rewrite page titles and descriptions and does not guarantee ranking or rich results.
 
-### 3. Mobile Responsiveness
-- Removed toggle navigation for simpler, always-visible menu
-- Ensured responsive design works on all device sizes
-- Maintained side-by-side logo and address layout on mobile
+## Search topics covered
 
-## Ongoing SEO Recommendations
+- Diagnostic centre in Janakpur / pathology lab in Janakpurdham
+- HbA1c and blood sugar tests
+- Liver function (LFT) and SGPT tests
+- Kidney function (KFT) and creatinine tests
+- Vitamin D, Vitamin B12, and lipid profile tests
+- Pregnancy Beta hCG test
+- Tumor marker tests including PSA and CA-125
+- Home blood collection in Janakpur
+- Online blood test report access in Nepal
+- Health checkup and full body checkup packages
 
-### 1. Content Marketing
-- Create a blog section with health-related articles
-- Write articles about:
-  - "Understanding Blood Test Results"
-  - "Importance of Regular Health Checkups"
-  - "Latest Advances in Pathology Testing"
-  - "Seasonal Health Tips for Residents of Janakpurdham"
-  - "Common Health Issues in Dhanusha District"
+## Local SEO work to do outside the website
 
-### 2. Local SEO
-- Claim and optimize Google My Business listing
-- Encourage customer reviews
-- Submit to local Nepal business directories
-- Register with healthcare-specific directories
-- Ensure NAP (Name, Address, Phone) consistency across directories
+1. Verify the Google Business Profile and keep the real business name, address, phone, website, categories, hours, and service area complete and consistent with the site.
+2. Add recent real photos of the lab, equipment, entrance, and team to the Business Profile.
+3. Invite all patients to leave an honest review without incentives, and reply professionally while protecting patient privacy.
+4. Verify `hitechpathologylab.com.np` in Google Search Console, submit `https://hitechpathologylab.com.np/sitemap.xml`, and inspect the home, services, and booking URLs.
+5. Review Search Console impressions, queries, indexing, and click-through rates monthly. Improve pages based on real queries and booking enquiries.
+6. Keep business name, address, phone number, hours, and website consistent on reputable local directories and partner sites.
 
-### 3. Performance Optimization
-- Compress images further to improve load times
-- Minify CSS and JavaScript files
-- Enable browser caching
-- Consider using a Content Delivery Network (CDN)
+Google's local results are mainly influenced by relevance, distance, and prominence. Website edits can improve relevance and clarity, but they cannot guarantee a top position. Accurate Business Profile details and genuine local visibility also matter.
 
-### 4. Link Building
-- Reach out to local doctors and clinics for referral links
-- Partner with local hospitals for cross-promotion
-- Submit to medical and healthcare directories
-- Engage with local community groups on social media
+## Claims to keep factual
 
-### 5. Analytics and Monitoring
-- Install Google Analytics to track visitor behavior
-- Set up Google Search Console to monitor search performance
-- Regularly check for crawl errors
-- Monitor keyword rankings
+Do not say the Tosoh AiA 360 is "top 6" unless the lab can cite a current, reliable source for that ranking. Describe the analyzer and the tests it performs without an unsupported ranking or accuracy guarantee.
 
-## Target Keywords for Pathology Lab in Janakpurdham
+## Google references
 
-### Primary Keywords
-- "pathology lab Janakpurdham"
-- "diagnostic testing Janakpurdham"
-- "blood test Janakpurdham"
-- "urine analysis Janakpurdham"
-- "COVID-19 testing Janakpurdham"
-
-### Secondary Keywords
-- "medical laboratory Dhanusha"
-- "health checkup Nepal"
-- "lab test Hospital Road Janakpurdham"
-- "pathology services Nepal"
-- "diagnostic center Janakpurdham"
-
-### Long-tail Keywords
-- "best pathology lab in Janakpurdham Nepal"
-- "affordable blood test in Dhanusha district"
-- "fast COVID-19 testing Janakpurdham"
-- "comprehensive health checkup Janakpurdham"
-- "reliable urine analysis in Nepal"
-
-## Content Calendar Suggestions
-
-### Monthly Articles
-1. "Monthly Health Tips for Residents of Janakpurdham"
-2. "Understanding Your Latest Lab Results"
-3. "Seasonal Health Concerns in Dhanusha District"
-
-### Quarterly Deep-dives
-1. "Complete Guide to Blood Tests"
-2. "Importance of Regular Health Screenings"
-3. "Advances in Pathology Testing Technology"
-
-## Social Media Recommendations
-
-### Platforms to Focus On
-- Facebook (local community engagement)
-- Instagram (facility photos, health tips)
-- Twitter (quick health updates, news)
-
-### Content Ideas
-- Share health tips and facts
-- Post facility updates and new services
-- Highlight team members and their expertise
-- Share patient success stories (with permission)
-- Promote seasonal health campaigns
-
-## Measuring Success
-
-### Key Metrics to Track
-- Organic traffic growth
-- Keyword ranking improvements
-- Bounce rate reduction
-- Time on site increase
-- Conversion rate from organic traffic (bookings, calls)
-
-### Tools for Monitoring
-- Google Analytics
-- Google Search Console
-- SEMrush or Ahrefs (for keyword tracking)
-- PageSpeed Insights (for performance monitoring)
-
-## Additional Technical Considerations
-
-### Security
-- Implement HTTPS if not already done
-- Regular security audits
-- Keep all software updated
-
-### Accessibility
-- Ensure WCAG compliance
-- Add aria labels for screen readers
-- Maintain proper color contrast
-
-This guide should help maintain and improve the search engine rankings for Hi-Tech Pathology Lab in Janakpurdham, ultimately attracting more patients from the local community.
+- [Google Search Essentials](https://developers.google.com/search/docs/essentials)
+- [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [LocalBusiness structured data](https://developers.google.com/search/docs/appearance/structured-data/local-business)
+- [Build and submit a sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+- [Google tips to improve local ranking](https://support.google.com/business/answer/7091)

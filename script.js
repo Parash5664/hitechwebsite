@@ -40,6 +40,24 @@ function currentSlide(n) {
 document.addEventListener("DOMContentLoaded", function () {
   showSlides();
 
+  const testBookingForm = document.getElementById("testBookingForm");
+  if (testBookingForm) {
+    testBookingForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const formData = new FormData(testBookingForm);
+      const message = [
+        "Hello, I would like to book a test at Hi-Tech Pathology Lab.",
+        `Name: ${formData.get("name")}`,
+        `Phone: ${formData.get("phone")}`,
+        formData.get("email") ? `Email: ${formData.get("email")}` : "",
+        `Test or service: ${formData.get("test")}`,
+        formData.get("notes") ? `Notes: ${formData.get("notes")}` : ""
+      ].filter(Boolean).join("\n");
+      const whatsappUrl = `https://wa.me/9779822382156?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    });
+  }
+
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');
   const mainNav = document.getElementById('mainNav');

@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Book diagnostic tests online at Hi-Tech Pathology Lab Janakpurdham. Easy online booking for blood tests, urine tests, and health checkups in Nepal.">
-  <meta name="keywords" content="book test online, online lab booking Janakpurdham, book blood test Nepal, pathology lab appointment, health checkup booking">
+  <meta name="description" content="Book a blood test or health checkup at Hi-Tech Pathology Lab in Janakpur. Choose a test and send your request directly to our team on WhatsApp.">
   <meta name="author" content="Hi-Tech Pathology Lab">
   <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hitechpathologylab.com.np/book.html">
+  <link rel="icon" href="/images/logo.jpeg" type="image/jpeg">
   
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Book a Test - Hi-Tech Pathology Lab">
-  <meta property="og:description" content="Book your diagnostic test online at Hi-Tech Pathology Lab Janakpurdham. Fast, reliable, and hassle-free booking.">
-  <meta property="og:image" content="./a9.jpg">
-  <meta property="og:url" content="./book.html">
+  <meta property="og:title" content="Book a Blood Test in Janakpur | Hi-Tech Pathology Lab">
+  <meta property="og:description" content="Request HbA1c, blood sugar, liver, kidney, vitamin tests and health checkups in Janakpurdham through WhatsApp.">
+  <meta property="og:site_name" content="Hi-Tech Pathology Lab">
+  <meta property="og:image" content="https://hitechpathologylab.com.np/a9.jpg">
+  <meta property="og:url" content="https://hitechpathologylab.com.np/book.html">
   <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   
-  <title>Book a Test Online - Hi-Tech Pathology Lab, Janakpurdham</title>
+  <title>Book a Blood Test in Janakpur | Hi-Tech Pathology Lab</title>
   <link rel="stylesheet" href="style.css" />
 
   <!-- WhatsApp Styles -->
@@ -104,10 +107,10 @@
   <main style="margin-top:88px;padding:28px;">
     <section style="max-width:900px;margin:18px auto; background:#fff; padding:20px; border-radius:12px; box-shadow:var(--shadow);">
       
-      <h2>Book a Test</h2>
-      <p class="muted">Fill the details below and book directly through WhatsApp.</p>
+      <h1>Book a Blood Test in Janakpur</h1>
+      <p class="muted">Choose a test or health package and send your booking request to Hi-Tech Pathology Lab in Janakpurdham, Dhanusha.</p>
 
-      <form style="margin-top:12px; display:grid; gap:10px;">
+      <form id="testBookingForm" style="margin-top:12px; display:grid; gap:10px;">
 
         <input type="text" 
                name="name" 
@@ -126,18 +129,29 @@
                placeholder="Email (optional)" 
                style="padding:10px; border-radius:8px; border:1px solid #ddd;">
 
-        <select name="test" 
+        <select name="test" required
                 style="padding:10px; border-radius:8px; border:1px solid #ddd;">
-          <option value="">Select test</option>
+          <option value="" disabled selected>Select a test or service</option>
           <option>Basic Health Checkup Package</option>
           <option>Advanced Health Checkup Package</option>
+          <option>ANC Health Package</option>
+          <option>Basic Cancer Screening Package (Male)</option>
+          <option>Full Body Checkup</option>
           <option>Blood Test</option>
           <option>Urine Analysis</option>
           <option>Thyroid Test</option>
           <option>Complete Blood Count Test</option>
-          <option>Liver Test</option>
-          <option>Kidney Test</option>
-          <option>Sugar Test</option>
+          <option>HbA1c Test</option>
+          <option>Blood Sugar Test</option>
+          <option>Liver Function Test (LFT / SGPT)</option>
+          <option>Kidney Function Test (KFT / Creatinine)</option>
+          <option>Vitamin D Test</option>
+          <option>Vitamin B12 Test</option>
+          <option>Lipid Profile / Cholesterol Test</option>
+          <option>Pregnancy Beta hCG Test</option>
+          <option>Tumor Marker Test (PSA / CA-125)</option>
+          <option>Home Blood Collection</option>
+          <option>Online Blood Test Report Enquiry</option>
           <option>COVID-19 Test</option>
         </select>
 
@@ -146,13 +160,9 @@
                   placeholder="Additional notes" 
                   style="padding:10px; border-radius:8px; border:1px solid #ddd;"></textarea>
 
-        <!-- Only WhatsApp Button -->
-        <a href="https://wa.me/9779822382156?text=Hello%2C%20I%20would%20like%20to%20book%20a%20test%20at%20Hi-Tech%20Pathology."
-           class="whatsapp-btn"
-           target="_blank"
-           rel="noopener noreferrer">
+        <button type="submit" class="whatsapp-btn">
           Book via WhatsApp
-        </a>
+        </button>
 
       </form>
     </section>

@@ -754,6 +754,11 @@ main {
     object-fit:cover;
 }
 
+.machine-card img{
+    object-fit:contain;
+    background:#f4f8fc;
+}
+
 /* about */
 .about-container{
     gap:60px;
